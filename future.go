@@ -12,7 +12,6 @@ type Future[T any] interface {
 }
 
 type future[T any] struct {
-	Result[T]
 	result    *T
 	err       error
 	completed bool
